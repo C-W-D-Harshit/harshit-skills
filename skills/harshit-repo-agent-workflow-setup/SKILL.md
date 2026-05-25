@@ -12,7 +12,7 @@ Scaffold the per-repo configuration that Harshit's workflow assumes:
 - **Local work tracking** — feature docs and phase breakdowns in `docs/features/`
 - **Agent config docs** — `docs/agents/` tells skills where work, triage labels, and domain docs live
 - **Memory files** — `CONTEXT.md`, `LEARNINGS.md`, `ISSUES.md`
-- **Safety rails** — context-first discovery, grilling, phased TDD, review, logging, migration safety, no build/dev commands
+- **Safety rails** — context-first discovery, grilling, phased TDD, smallest clear implementation, review, logging, migration safety, no build/dev commands
 
 This is a prompt-driven setup skill, not a deterministic script. Explore, present what you found, make conservative recommendations, confirm risky replacements, then write.
 
@@ -137,6 +137,7 @@ Keep `AGENTS.md` concise. Include these rules, adapted to the repo:
 - never run build commands or dev servers
 - small-change exception for typo/copy/tiny styling/one-line obvious bugs
 - unrelated issues go to `ISSUES.md`
+- prefer the smallest clear implementation without clever compression
 - TDD per feature phase
 - new features and changed error paths need structured, searchable logs
 - migration safety: schema changes need migrations; never edit existing migrations
@@ -144,6 +145,15 @@ Keep `AGENTS.md` concise. Include these rules, adapted to the repo:
 - keep docs small
 
 Use package-manager examples that match the repo. For unknown package manager, list generic forbidden categories instead of specific commands.
+
+Include a short `Code Size And Readability` section:
+
+- prefer the smallest clear implementation
+- keep feature code readable enough for the user to review directly
+- avoid clever compression, broad abstractions, and framework-heavy patterns just to reduce line count
+- use less code only when it makes behavior easier to understand
+- use more code when explicit steps make product logic clearer
+- add helpers, abstractions, or shared modules only when they remove real duplication or complexity
 
 ### 6. Supporting Docs Content
 

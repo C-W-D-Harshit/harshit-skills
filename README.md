@@ -32,6 +32,7 @@ The setup skill will inspect the project first, then create or update the repo-s
 - project-scoped skills.sh installs, not global installs
 - context-first discovery before grilling
 - feature docs, vertical phases, TDD, and code review
+- smallest clear implementation guidance
 - structured logging expectations
 - migration safety rules
 - no build command and no dev server guardrails
@@ -65,6 +66,7 @@ This keeps planning grounded in the real code instead of stale documentation or 
 - Ask fewer, better questions after reading the project.
 - Invoke skills when the work reaches that domain, not all upfront.
 - Keep docs readable for humans.
+- Prefer the smallest clear implementation.
 - Work in small vertical slices.
 - Log failures so they are searchable later.
 - Do not hide unrelated bugs in chat; capture them in `ISSUES.md`.
