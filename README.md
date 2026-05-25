@@ -9,7 +9,7 @@ The main idea is simple: the codebase is the source of truth, docs stay small, a
 Run this from the repo where you want the workflow installed:
 
 ```bash
-npx skills@latest add C-W-D-Harshit/harshit-skills
+npx skills@latest add C-W-D-Harshit/harshit-skills --skill harshit-repo-agent-workflow-setup
 ```
 
 Then ask your agent:
@@ -70,14 +70,6 @@ This keeps planning grounded in the real code instead of stale documentation or 
 - Work in small vertical slices.
 - Log failures so they are searchable later.
 - Do not hide unrelated bugs in chat; capture them in `ISSUES.md`.
-
-## Install A Specific Skill
-
-This repo currently has one skill, but you can still install it explicitly:
-
-```bash
-npx skills@latest add C-W-D-Harshit/harshit-skills --skill harshit-repo-agent-workflow-setup
-```
 
 If the skill does not appear immediately in your agent, restart the agent session.
 
