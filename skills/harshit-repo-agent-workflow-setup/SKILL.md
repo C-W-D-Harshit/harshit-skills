@@ -1,6 +1,6 @@
 ---
 name: harshit-repo-agent-workflow-setup
-description: Sets up Harshit's repo-scoped AI agent workflow: project-scoped skills.sh installs, AGENTS.md/CLAUDE.md, docs/agents, docs/features, CONTEXT.md, LEARNINGS.md, ISSUES.md, local markdown work tracking, context-first discovery, grilling, phased TDD, code review, logging, migration safety, and no build/dev command guardrails.
+description: "Sets up Harshit's repo-scoped AI agent workflow: project-scoped skills.sh installs, AGENTS.md/CLAUDE.md, docs/agents, docs/features, CONTEXT.md, LEARNINGS.md, ISSUES.md, local markdown work tracking, context-first discovery, grilling, phased TDD, code review, logging, migration safety, and no build/dev command guardrails."
 ---
 
 # Harshit Repo Agent Workflow Setup
