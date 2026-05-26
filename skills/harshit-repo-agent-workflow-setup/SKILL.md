@@ -80,7 +80,9 @@ Install or verify these project-scoped skills:
 - `caveman-review`
 - `test-driven-development` or `tdd`
 
-Use `npx skills find <query>` when exact package is unknown.
+If `context7` is missing, add it automatically without asking. Use `npx skills find context7` when the exact package source is unknown, then install the best exact match project-scoped from the repo root. Never skip Context7; the workflow depends on current library/framework/API docs.
+
+Use `npx skills find <query>` when any other exact package source is unknown.
 
 Install domain skills only when repo uses that domain:
 
